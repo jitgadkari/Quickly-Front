@@ -8,13 +8,15 @@ function App() {
 
   const sidebarcntxvalue= useContext(SideBarContext);
   return (
-    <section className={`${sidebarcntxvalue.showSideBarExtenison ? " pl-[340px]" :" pl-[120px]"}`}>
+    <section >
     <SideBarContextProvider>
     <BrowserRouter>
+    <main className={`w-screen h-screen  flex flex-row flex-2:flex-grow overflow-auto relative`}>
       <Sidebar />
       <Routes>
         <Route path="/" element={<DashBoard />}></Route>
       </Routes>
+    </main>
     </BrowserRouter>
     </SideBarContextProvider>
     </section>

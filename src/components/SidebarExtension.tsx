@@ -6,7 +6,7 @@ interface SidebarExtensionProps {}
 const SidebarExtension: React.FC<SidebarExtensionProps> = () => {
   return (
     <div
-      className={` w-[230px] h-screen  bg-[#D9E4FC] text-black pt-10 pl-4  text-center `}
+      className={` w-[230px] h-full  bg-[#D9E4FC] text-black pt-10 pl-4  text-center `}
     >
       <h3 className="font-extrabold">SETTINGS</h3>
       <section className="pt-10 space-y-3 font-semibold">
